@@ -1,0 +1,16 @@
+{
+  "name": "Rara Bot",
+  "short_name": "Rara",
+  "description": "The best discord bot for all your roleplay, moderation, and economy use!",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#1a1a1e",
+  "theme_color": "#1a1a1e",
+  "icons": [
+    {
+      "src": "https://cdn.discordapp.com/attachments/881899387419258924/1196086610094198925/Rara.ico",
+      "sizes": "192x192",
+      "type": "image/x-icon"
+    }
+  ]
+}
