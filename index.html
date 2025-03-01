@@ -8,17 +8,16 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preload" as="image" href="https://i.ibb.co/C1TTymw/bkg.webp" />
     <link rel="manifest" href="manifest.json" />
-    <meta
+    <meta 
       name="description"
       content="Rara is the best discord bot for all your roleplay, moderation, and economy use! Add me now
-    to benefit from all my features."
-    />
+    to benefit from all my features." />
     <link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/881899387419258924/1196086610094198925/Rara.ico" type="image/x-icon">
     <meta name="theme-color" content="#1a1a1e">
     <style>
-        .navbar a {
-          color: white;
-        }
+      .navbar a {
+        color: white;
+      }
     </style>
   </head>
   <body>
@@ -26,85 +25,86 @@
       <nav class="navbar">
         <h3>Rara</h3>
         <ul>
-          <li><a href="page/commands.html">Commands</a></li>
-          <li><a href="https://discord.gg/e2rubbrac4" target="_blank">Support</a></li>
-          <li><a href="https://discord.com/oauth2/authorize?client_id=772939602863587368&permissions=68169720393463&scope=bot" target="_blank">Invite</a></li>
+          <li>
+            <a href="page/commands.html">Commands</a>
+          </li>
+          <li>
+            <a href="https://discord.gg/e2rubbrac4" target="_blank">Support</a>
+          </li>
+          <li>
+            <a href="https://discord.com/oauth2/authorize?client_id=772939602863587368&permissions=68169720393463&scope=bot" target="_blank">Invite</a>
+          </li>
+          <li>
+            <a id="login" href="/login">Login</a>
+          </li>
         </ul>
         <button class="hamburger">
           <div class="bar"></div>
         </button>
       </nav>
     </header>
-
     <nav class="mobile-nav">
       <a href="page/commands.html">Commands</a>
       <a href="https://discord.gg/e2rubbrac4">Support</a>
       <a href="https://discord.com/oauth2/authorize?client_id=772939602863587368&permissions=68169720393463&scope=bot">Invite</a>
+      <a id="login" href="/login">Login</a>
     </nav>
-
     <div class="hero-image">
       <div class="hero-text">
         <h1>Rara</h1>
-        <p>
-          The best discord bot for economy, moderation, utility, and security!
-        </p>
-        <a href="https://discord.com/oauth2/authorize?client_id=772939602863587368&permissions=68169720393463&scope=bot" target="_blank"><button type="button">Invite me</button></a>
+        <p> The best discord bot for economy, moderation, utility, and security! </p>
+        <a href="https://discord.com/oauth2/authorize?client_id=772939602863587368&permissions=68169720393463&scope=bot" target="_blank">
+          <button type="button">Invite me</button>
+        </a>
       </div>
     </div>
-
     <div class="card-container">
       <div class="card">
         <h1>High Uptime</h1>
-        <p>
-          By adding rara you are guaranteed High uptime so you will be able to
-          use this bot anytime you want to!
-        </p>
+        <p> By adding rara you are guaranteed High uptime so you will be able to use this bot anytime you want to! </p>
       </div>
       <div class="card">
         <h1>Blazing Fast</h1>
-        <p>
-          Rara is focused on performance so you will be rest assured that the
-          bot wont lag or take too long to respond!
-        </p>
+        <p> Rara is focused on performance so you will be rest assured that the bot wont lag or take too long to respond! </p>
       </div>
       <div class="card">
         <h1>Slash Commands</h1>
-        <p>
-          Rara has slash commands so you wont be confused on the usage of the
-          commands!
-        </p>
+        <p> Rara has slash commands so you wont be confused on the usage of the commands! </p>
       </div>
       <div class="card">
         <h1>Systems</h1>
-        <p>
-          We have many systems in our bot for example tickets, verification, and
-          many more!
-        </p>
+        <p> We have many systems in our bot for example tickets, verification, and many more! </p>
       </div>
     </div>
-
     <div class="banner">
       <h1>Do you have any issues or questions? Join the support server!</h1>
-      <a href="https://discord.gg/e2rubbrac4" target="_blank"><button class="button">Support Server</button></a>
-      <a href="https://discord.gg/e2rubbrac4" target="_blank"><button class="button-green">Grom Community</button></a>
+      <a href="https://discord.gg/e2rubbrac4" target="_blank">
+        <button class="button">Support Server</button>
+      </a>
+      <a href="https://discord.gg/e2rubbrac4" target="_blank">
+        <button class="button-green">Grom Community</button>
+      </a>
     </div>
-
     <footer class="footer">
-      <p>Rara Created with <a href="https://discord.js.org/" target="_blank">JS</a> | Made with 💖 by 𝔍𝔬𝔥𝔫𝔫𝔶#1999</p>
+      <p>Rara Created with <a href="https://discord.js.org/" target="_blank">JS</a> | Made with 💖 by 𝔍𝔬𝔥𝔫𝔫𝔶#1999 </p>
     </footer>
+    <!-- 
 
+    <script>
+      document.getElementById('login').addEventListener('click', () => {
+        window.location.href = '/login';
+      });
+    </script>
+-->
     <script src="script.js"></script>
     <script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('service-worker.js')
-      .then((registration) => {
-        console.log('Service Worker registered with scope:', registration.scope);
-      })
-      .catch((error) => {
-        console.error('Service Worker registration failed:', error);
-      });
-  }
-</script>
-
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js').then((registration) => {
+          console.log('Service Worker registered with scope:', registration.scope);
+        }).catch((error) => {
+          console.error('Service Worker registration failed:', error);
+        });
+      }
+    </script>
   </body>
 </html>

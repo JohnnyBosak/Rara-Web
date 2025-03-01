@@ -7,7 +7,7 @@ self.addEventListener('install', (event) => {
         '/index.html',
         '/style.css',
         '/script.js',
-        '/page/commands.html',
+        '/page/commands.html'
         // Add other files you want to cache
       ]);
     })
@@ -15,6 +15,12 @@ self.addEventListener('install', (event) => {
 });
 
 self.addEventListener('fetch', (event) => {
+  // Bypass the cache for dynamic endpoints such as /logout.
+  if (event.request.url.includes('/logout')) {
+    event.respondWith(fetch(event.request));
+    return;
+  }
+  
   event.respondWith(
     caches.match(event.request).then((response) => {
       return response || fetch(event.request);
